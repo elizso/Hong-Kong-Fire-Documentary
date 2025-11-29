@@ -69,20 +69,25 @@
 - 格式範例：`2025-11-27 14:30`（如未提供時區，則假設為香港時間 HKT）
 - 如未提供，則假設為該文件首次提交至存庫的時間（原始 commit 時間）
 
-**3. 收集方法 (Collection Method)**
+**3. 檔案雜湊值 (File Hash) [建議 / Recommended]**
+- 有助於驗證檔案的完整性，確保符合法律/存檔要求
+- Mac/Linux 指令：`shasum -a 256 filename.pdf`
+- Windows 指令：`certutil -hashfile filename.pdf SHA256`
+
+**4. 收集方法 (Collection Method)**
 - 請選擇以下其中一項：
 
   - 網上下載 (Web download)：從網站下載或自動爬取
   - 網際網路檔案館 (Wayback Machine)：從 Internet Archive/Wayback Machine 取得
-  - 官方網站 (Official portal)：從官方政府/機構網站下載
+  - 政府/法定機構公佈 (Official/Public Record)：從政府憲報、部門網站或法定機構下載
   - 電郵附件 (Email attachment)：以電郵附件形式接收
   - 通訊平台 (Messaging platform)：從通訊平台取得（Telegram, WhatsApp 等）
-  - 實體掃描 (Physical scan)：從實體文件掃描
-  - 螢幕截圖 (Screenshot)：網頁/螢幕截圖
+  - 實體掃描 (Scan of Original/CTC)：從實體正本或核證副本 (Certified True Copy) 掃描
+  - 螢幕截圖 (Screen Capture)：網頁/螢幕截圖（僅在無法下載原始檔時使用）
   - 第三方檔案庫 (Third-party archive)：從第三方檔案服務取得
   - 其他 (Other)：其他方法（請在備註中說明）
 
-**4. 收集者 (Collector)**（可選）
+**5. 收集者 (Collector)**（可選）
 - 如未提供，則假設為提交該條目的貢獻者
 
 **範例 / Example:**
@@ -221,20 +226,25 @@ To ensure documents can serve as valid evidence, please include the following in
 - Format example: `2025-11-27 14:30` (assume HKT if timezone is not provided)
 - If not provided, assumed to be the time when the file was first committed to the repository (original commit time)
 
-**3. Collection Method**
+**3. File Hash (SHA-256) [Recommended for Evidence]**
+- Helps verify file integrity for legal/archival purposes.
+- Mac/Linux command: `shasum -a 256 filename.pdf`
+- Windows command: `certutil -hashfile filename.pdf SHA256`
+
+**4. Collection Method**
 - Please choose one of the following:
 
   - 網上下載 (Web download): Download or automated scraping from website
   - 網際網路檔案館 (Wayback Machine): Retrieved from Internet Archive/Wayback Machine
-  - 官方網站 (Official portal): Downloaded from official government/institutional portal
+  - 政府/法定機構公佈 (Official/Public Record): Downloaded from government gazette, department website, or statutory body
   - 電郵附件 (Email attachment): Received as email attachment
   - 通訊平台 (Messaging platform): Retrieved from messaging platform (Telegram, WhatsApp, etc.)
-  - 實體掃描 (Physical scan): Scanned from physical document
-  - 螢幕截圖 (Screenshot): Screenshot of webpage/screen
+  - 實體掃描 (Scan of Original/CTC): Scanned from original document or Certified True Copy
+  - 螢幕截圖 (Screen Capture): Screenshot of webpage/screen (use only if original file is unavailable)
   - 第三方檔案庫 (Third-party archive): Retrieved from third-party archive service
   - 其他 (Other): Other method (please specify in notes)
 
-**4. Collector** (Optional)
+**5. Collector** (Optional)
 - If not provided, assumed to be the contributor who added this entry
 
 **Example:**
